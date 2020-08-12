@@ -1,2 +1,5 @@
 # pishtazProject
-data gathering and processing with postgreSQL , C and 1python
+data gathering and processing with postgreSQL , C and python
+به نام خدا
+سلام در این پروژه قصد داریم تا با استفاده از بش  اطلاعات را از یک پایگاه داده دریافت و با یک برنامه ی سی این اطلاعات دا در دیتابیسی ذخیره کنیم و 
+بعد از آن با برنامه پایتون تعدادی تحلیل روی داده ها انجام میدهیم
