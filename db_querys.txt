@@ -1,0 +1,30 @@
+This file contains the queries for databse setup
+
+#creating the main database
+CREATE DATABASE fpdb;
+
+creating the main table for storing data grabbed from the source
+postgres=# CREATE TABLE fp_stores_data(
+postgres(# time TIMESTAMP PRIMARY KEY NOT NULL,
+postgres(# province VARCHAR(20),
+postgres(# city VARCHAR(20),
+postgres(# market_id INT,
+postgres(# product_id INT,
+postgres(# price INT,
+postgres(# quantity INT,
+postgres(# has_sold INT);
+-------------------------------
+
+postgres=# CREATE TABLE fp_city_aggregation(
+postgres(# time TIMESTAMP PRIMARY KEY,
+postgres(# city VARCHAR(20),
+postgres(# price INT,
+postgres(# quantity INT,
+postgres(# has_sold INT);
+
+-----------------------------------
+postgres=# CREATE TABLE fp_store_aggregation(
+postgres(# market_id INT PRIMARY KEY,
+postgres(# has_sold INT,
+postgres(# profit INT);
+----------------------------------------
